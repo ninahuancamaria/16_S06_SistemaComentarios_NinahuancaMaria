@@ -1,0 +1,31 @@
+<div class="container">
+  <h2>Sistema de Comentarios
+    <span class="badge">{{ totalComentarios }} comentarios</span>
+  </h2>
+
+  <div class="form-card">
+    <h3>Nuevo comentario</h3>
+    <div *ngIf="mensaje" class="mensaje-exito">{{ mensaje }}</div>
+
+    <label>Nombre</label>
+    <input [(ngModel)]="nombre" placeholder="Nombres y Apellidos" />
+
+    <label>Comentario</label>
+    <textarea [(ngModel)]="body" placeholder="Escribe aquí..."></textarea>
+
+    <div class="btn-row">
+      <button (click)="limpiar()">Limpiar</button>
+      <button class="btn-primary" (click)="enviar()" [disabled]="cargando">
+        {{ cargando ? 'Enviando...' : 'Enviar' }}
+      </button>
+    </div>
+  </div>
+
+  <div class="lista">
+    <div class="comentario" *ngFor="let c of comentarios">
+      <strong>{{ c.name }}</strong>
+      <span class="fecha" *ngIf="c.fecha"> · {{ c.fecha }}</span>
+      <p>{{ c.body }}</p>
+    </div>
+  </div>
+</div>

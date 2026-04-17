@@ -1,0 +1,94 @@
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: sans-serif;
+}
+
+h2 { font-size: 22px; margin-bottom: 1.5rem; }
+
+.badge {
+  background: #dbeafe;
+  color: #1e40af;
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.form-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.form-card h3 { font-size: 15px; margin-bottom: 1rem; color: #374151; }
+
+label {
+  display: block;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+textarea { height: 80px; resize: none; }
+
+.btn-row {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-primary {
+  background: #dbeafe;
+  border-color: transparent;
+  color: #1e40af;
+  font-weight: 500;
+}
+
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.mensaje-exito {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.lista { display: flex; flex-direction: column; gap: 10px; }
+
+.comentario {
+  background: #f9fafb;
+  border-left: 3px solid #93c5fd;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.comentario strong { font-size: 14px; }
+.comentario p { font-size: 13px; color: #4b5563; margin-top: 4px; }
+.fecha { font-size: 11px; color: #9ca3af; }
